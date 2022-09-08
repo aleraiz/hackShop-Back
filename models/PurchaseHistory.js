@@ -10,7 +10,7 @@ module.exports = (sequelize, Model, DataTypes) => {
       },
       status: {
         type: DataTypes.STRING(50),
-        allowNull: false,
+        allowNull: true,
       },
       paymentMethod: {
         type: DataTypes.STRING(100),

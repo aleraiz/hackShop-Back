@@ -13,7 +13,7 @@ module.export = async function () {
           id: 4,
           quantity: 3,
           price: 11,
-        }, // Preguntar
+        },
       ],
       paymentMethod: "Visa Crédito",
       address: "Rivera 2342",

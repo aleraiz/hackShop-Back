@@ -3,11 +3,7 @@ module.export = async function () {
   const purchaseHistory = [
     {
       status: "",
-    },
-    {
-      paymentMethod: "",
-    },
-    {
+      paymentMethod: "Visa Credito",
       productsList: [],
     },
   ];
