@@ -3,16 +3,23 @@ const Administrator = require("../models/Administrator");
 module.export = async function () {
   const administrator = [
     {
-      firstname: "",
+      firstname: "Carlos",
+      lastname: "Castro",
+      email: "carloscastro@gmail.com",
+      password: "123",
     },
     {
-      lastname: "",
+      firstname: "Pablo",
+      lastname: "Perez",
+      email: "pabloperez@gmail.com",
+      password: "123",
     },
+
     {
-      email: "",
-    },
-    {
-      password: "",
+      firstname: "Martin",
+      lastname: "Rodriguez",
+      email: "martinrodriguez@gmail.com",
+      password: "123",
     },
   ];
   await Administrator.bulkCreate(administrator);
