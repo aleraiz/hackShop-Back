@@ -26,7 +26,7 @@ module.exports = (sequelize, Model, DataTypes) => {
       },
       stock: {
         type: DataTypes.STRING(10),
-        allowNull: false,
+        allowNull: true,
       },
       featured: {
         type: DataTypes.BOOLEAN,

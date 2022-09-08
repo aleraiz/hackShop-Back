@@ -1,4 +1,4 @@
-const PurchaseHistory = require("../models/PurchaseHistory");
+const { PurchaseHistory } = require("../models");
 module.exports = async function () {
   const purchaseHistory = [
     {

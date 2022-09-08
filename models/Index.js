@@ -35,8 +35,10 @@ Product.belongsTo(Category);
 // Buyer.hasMany(PurchaseHistory);
 // PurchaseHistory.belongsTo(Buyer);
 
-PurchaseHistory.hasMany(Order);
-Order.belongsTo(PurchaseHistory);
+// PurchaseHistory.hasMany(Order);
+// Order.belongsTo(PurchaseHistory);
+Order.hasMany(PurchaseHistory);
+PurchaseHistory.belongsTo(Order);
 
 module.exports = {
   sequelize,

@@ -1,4 +1,4 @@
-const Product = require("../models/Product");
+const { Product } = require("../models");
 
 module.exports = async function () {
   const product = [
@@ -172,7 +172,7 @@ module.exports = async function () {
         },
       ],
       price: "5.70",
-      featured: "",
+      featured: true,
       slug: "",
     },
     {
