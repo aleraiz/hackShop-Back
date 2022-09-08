@@ -1,6 +1,6 @@
 const Administrator = require("../models/Administrator");
 
-module.export = async function () {
+module.exports = async function () {
   const administrator = [
     {
       firstname: "Carlos",

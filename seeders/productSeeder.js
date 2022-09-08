@@ -1,6 +1,6 @@
 const Product = require("../models/Product");
 
-module.export = async function () {
+module.exports = async function () {
   const product = [
     {
       productName: "Platycerium bifurcatum M-15",

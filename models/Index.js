@@ -23,8 +23,8 @@ const PurchaseHistory = require("./PurchaseHistory")(
 );
 
 // Relations
-Order.belongsTo(Buyer);
 Buyer.hasMany(Order);
+Order.belongsTo(Buyer);
 
 Order.hasMany(Product);
 Product.belongsTo(Order);

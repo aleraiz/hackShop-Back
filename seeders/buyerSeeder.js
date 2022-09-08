@@ -1,6 +1,6 @@
 const Buyer = require("../models/Buyer");
 
-module.export = async function () {
+module.exports = async function () {
   const buyer = [
     {
       firstname: "Juan",

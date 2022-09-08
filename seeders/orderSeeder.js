@@ -1,6 +1,6 @@
 const Order = require("../models/Order");
 
-module.export = async function () {
+module.exports = async function () {
   const order = [
     {
       productList: [
