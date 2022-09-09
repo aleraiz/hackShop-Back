@@ -1,4 +1,4 @@
-const { Buyer } = require("../models");
+const { Buyer, Product } = require("../models");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll();
@@ -6,12 +6,14 @@ async function indexProducts(req, res) {
 }
 
 async function indexProductId(req, res) {
-  const product = await Product.findByPk(1);
+  const product = await Product.findByPk(req.params.id);
   res.json(product);
 }
 
 async function indexCategory(req, res) {
-  const product = await Product.findAll({ where: { categoryId: 1 } });
+  const product = await Product.findAll({
+    where: { categoryId: req.body.category },
+  });
   res.json(product);
 }
 async function createlogin(req, res) {
