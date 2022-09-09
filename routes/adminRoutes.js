@@ -1,17 +1,10 @@
 const express = require("express");
 const adminRoutes = express.Router();
+const adminController = require("../controllers/adminControllers");
 
-adminRoutes.get("/admin", (req, res) => {
-  res.send("Soy el admin");
-});
-adminRoutes.post("/admin", (req, res) => {
-  res.send("Soy el admin");
-});
-adminRoutes.delete("/admin", (req, res) => {
-  res.send("Soy el admin");
-});
-adminRoutes.put("/admin", (req, res) => {
-  res.send("Soy el admin");
-});
+adminRoutes.get("/admin", adminController.indexAdmin);
+adminRoutes.post("/admin", adminController.store);
+adminRoutes.put("/admin/:id", adminController.update);
+adminRoutes.delete("/admin/:id", adminController.destroy);
 
 module.exports = adminRoutes;
