@@ -9,9 +9,9 @@ const db = require("./dbInitialSetUp");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-db();
+// db();
 
-app.use(routes);
+routes(app);
 app.listen(PORT, () => {
   console.log(`Corriendo en el puerto "http://localhost:${PORT}"`);
 });
