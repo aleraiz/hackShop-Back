@@ -13,7 +13,7 @@ router.get("/cart", (req, res) => {
 router.post("/cart", (req, res) => {
   res.send("Soy el cart");
 });
-router.delete("/cart", (req, res) => {
+router.delete("/cart/:id", (req, res) => {
   res.send("Soy el cart");
 });
 router.get("/admin", (req, res) => {

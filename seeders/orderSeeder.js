@@ -1,6 +1,6 @@
-const Order = require("../models/Order");
+const { Order } = require("../models");
 
-module.export = async function () {
+module.exports = async function () {
   const order = [
     {
       productList: [
@@ -17,16 +17,19 @@ module.export = async function () {
       ],
       paymentMethod: "Visa Crédito",
       address: "Rivera 2342",
+      buyerId: 2,
     },
     {
       productList: [4, 2, 3],
       paymentMethod: "Visa Crédito",
       address: "Soca 1342",
+      buyerId: 1,
     },
     {
       productList: [5, 6, 7, 8],
       paymentMethod: "Visa Débito",
       address: "Ponce 4334",
+      buyerId: 3,
     },
   ];
   await Order.bulkCreate(order);

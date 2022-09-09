@@ -1,6 +1,6 @@
-const Buyer = require("../models/Buyer");
+const { Buyer } = require("../models");
 
-module.export = async function () {
+module.exports = async function () {
   const buyer = [
     {
       firstname: "Juan",

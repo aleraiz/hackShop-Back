@@ -1,5 +1,5 @@
-const PurchaseHistory = require("../models/PurchaseHistory");
-module.export = async function () {
+const { PurchaseHistory } = require("../models");
+module.exports = async function () {
   const purchaseHistory = [
     {
       status: "",

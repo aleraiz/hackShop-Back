@@ -23,8 +23,8 @@ const PurchaseHistory = require("./PurchaseHistory")(
 );
 
 // Relations
-Order.belongsTo(Buyer);
 Buyer.hasMany(Order);
+Order.belongsTo(Buyer);
 
 Order.hasMany(Product);
 Product.belongsTo(Order);
@@ -35,8 +35,10 @@ Product.belongsTo(Category);
 // Buyer.hasMany(PurchaseHistory);
 // PurchaseHistory.belongsTo(Buyer);
 
-PurchaseHistory.hasMany(Order);
-Order.belongsTo(PurchaseHistory);
+// PurchaseHistory.hasMany(Order);
+// Order.belongsTo(PurchaseHistory);
+Order.hasMany(PurchaseHistory);
+PurchaseHistory.belongsTo(Order);
 
 module.exports = {
   sequelize,

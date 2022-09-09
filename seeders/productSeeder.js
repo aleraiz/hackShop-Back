@@ -1,6 +1,6 @@
-const Product = require("../models/Product");
+const { Product } = require("../models");
 
-module.export = async function () {
+module.exports = async function () {
   const product = [
     {
       productName: "Platycerium bifurcatum M-15",
@@ -172,7 +172,7 @@ module.export = async function () {
         },
       ],
       price: "5.70",
-      featured: "",
+      featured: true,
       slug: "",
     },
     {

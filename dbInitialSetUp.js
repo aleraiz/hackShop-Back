@@ -1,4 +1,4 @@
-const sequelize = require("./models/Index");
+const db = require("./models/Index");
 
 const administratorSeeder = require("./seeders/administratorSeeder");
 const productSeeder = require("./seeders/productSeeder");
@@ -8,7 +8,7 @@ const purchaseHistorySeeder = require("./seeders/purchaseHistorySeeder");
 const buyerSeeder = require("./seeders/buyerSeeder");
 
 module.exports = async function () {
-  await sequelize.sync({ force: true });
+  await db.sequelize.sync({ force: true });
   await administratorSeeder();
   await buyerSeeder();
   await categorySeeder();
