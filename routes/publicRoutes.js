@@ -1,12 +1,11 @@
 const express = require("express");
 const publicRoutes = express.Router();
+const { showProducts } = require("../controllers/controllersAle");
 
 publicRoutes.get("/", (req, res) => {
   res.send("soy el HOME");
 });
-publicRoutes.get("/products", (req, res) => {
-  res.send("Soy el admin");
-});
+publicRoutes.get("/products", showProducts);
 publicRoutes.get("/cart", (req, res) => {
   res.send("Soy el cart");
 });
