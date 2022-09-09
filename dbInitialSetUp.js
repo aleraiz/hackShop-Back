@@ -15,6 +15,5 @@ module.exports = async function () {
   await orderSeeder();
   await productSeeder();
   await purchaseHistorySeeder();
-
   console.log("Se crearon las tablas");
 };

@@ -1,5 +1,19 @@
 const { Buyer } = require("../models");
 
+async function indexProducts(req, res) {
+  const products = await Product.findAll();
+  res.json(products);
+}
+
+async function indexProductId(req, res) {
+  const product = await Product.findByPk(1);
+  res.json(product);
+}
+
+async function indexCategory(req, res) {
+  const product = await Product.findAll({ where: { categoryId: 1 } });
+  res.json(product);
+}
 async function createlogin(req, res) {
   const buyer = await Buyer.findOne({
     where: { email: req.body.email },
@@ -33,6 +47,9 @@ async function storeRegister(req, res) {
 }
 
 module.exports = {
+  indexProducts,
+  indexProductId,
+  indexCategory,
   createlogin,
   storeRegister,
 };
