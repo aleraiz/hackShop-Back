@@ -12,6 +12,7 @@ publicRoutes.get("/", (req, res) => {
 
 publicRoutes.get("/products", pagesControllers.indexProducts);
 
+//deberia ser pruducts, en plural
 publicRoutes.get("/product/:id", pagesControllers.indexProductId);
 
 publicRoutes.get("/products/:category", pagesControllers.indexCategory);
