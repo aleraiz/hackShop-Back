@@ -23,6 +23,7 @@ module.exports = async function () {
       price: "4.60",
       featured: false,
       slug: "",
+      categoryId: 1,
     },
     {
       productName: "Blechnum silver lady (helecho) M-15",
@@ -45,6 +46,7 @@ module.exports = async function () {
       price: "6.65",
       featured: true,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Coleus gigante M-15",
@@ -67,6 +69,7 @@ module.exports = async function () {
       price: "5.95",
       featured: false,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Phlebodium aureum (helecho) M-15",
@@ -88,6 +91,7 @@ module.exports = async function () {
       price: "6.60",
       featured: false,
       slug: "",
+      categoryId: 1,
     },
     {
       productName: "Phlebodium aureum (helecho) M-15",
@@ -109,6 +113,7 @@ module.exports = async function () {
       price: "6,60",
       featured: true,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Gerbera M-15",
@@ -131,6 +136,7 @@ module.exports = async function () {
       price: "5.99",
       featured: false,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Petunia grandiflora M-15",
@@ -153,6 +159,7 @@ module.exports = async function () {
       price: "3.65",
       featured: false,
       slug: "",
+      categoryId: 1,
     },
     {
       productName: "Celosia plumosa M-15",
@@ -174,6 +181,7 @@ module.exports = async function () {
       price: "5.70",
       featured: true,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Carex bronze M-15 (gramineas)",
@@ -195,6 +203,7 @@ module.exports = async function () {
       price: "4.95",
       featured: true,
       slug: "",
+      categoryId: 2,
     },
     {
       productName: "Bidens ferulifolia M-13",
@@ -216,6 +225,7 @@ module.exports = async function () {
       price: "4.10",
       featured: true,
       slug: "",
+      categoryId: 1,
     },
   ];
   await Product.bulkCreate(product);
