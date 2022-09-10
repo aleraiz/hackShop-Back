@@ -1,3 +1,4 @@
+const bcrypt = require("bcryptjs");
 const { Buyer, Product } = require("../models");
 
 async function indexProducts(req, res) {
@@ -16,12 +17,22 @@ async function indexCategory(req, res) {
   });
   res.json(product);
 }
+
 async function createlogin(req, res) {
   const buyer = await Buyer.findOne({
     where: { email: req.body.email },
   });
 
-  if (!buyer.password) {
+  if (!buyer) {
+    return res.status(409).json({ error: "Email already not exists" });
+  }
+
+  const verifyPassword = await bcrypt.compare(
+    req.body.password,
+    buyer.password
+  );
+
+  if (!verifyPassword) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
 
@@ -29,23 +40,19 @@ async function createlogin(req, res) {
 }
 
 async function storeRegister(req, res) {
-  const buyerFind = await Buyer.findOne({
-    where: { email: req.body.email },
-  });
-
-  if (buyerFind) {
-    return res.status(401).json({ error: "Invalid credentials" });
+  try {
+    const buyerCreated = await Buyer.create({
+      firstname: req.body.email,
+      lastname: req.body.lastname,
+      email: req.body.email,
+      password: req.body.password,
+      address: req.body.address,
+      phoneNumber: req.body.phoneNumber,
+    });
+    res.status(200).json(buyerCreated);
+  } catch {
+    return res.status(409).json({ error: "Email already exists" });
   }
-  const buyerCreated = await Buyer.create({
-    firstname: req.body.email,
-    lastname: req.body.lastname,
-    email: req.body.email,
-    password: req.body.password,
-    address: req.body.address,
-    phoneNumber: req.body.phoneNumber,
-  });
-
-  res.status(200).json(buyerCreated);
 }
 
 module.exports = {
