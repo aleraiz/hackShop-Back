@@ -21,7 +21,7 @@ module.exports = (sequelize, Model, DataTypes) => {
         allowNull: false,
       },
       price: {
-        type: DataTypes.STRING(40),
+        type: DataTypes.STRING(30),
         allowNull: false,
       },
       stock: {
@@ -33,7 +33,7 @@ module.exports = (sequelize, Model, DataTypes) => {
         defaultValue: false,
       },
       slug: {
-        type: DataTypes.STRING(200),
+        type: DataTypes.STRING,
       },
     },
     {

@@ -1,20 +1,21 @@
 const { Product } = require("../models");
-
+const slugify = require("slugify");
 const adminController = {
   indexAdmin: async (req, res) => {
     const products = await Product.findAll({ order: [["createdAt", "DESC"]] });
     res.json(products);
   },
   update: async (req, res) => {
+    const productName = req.body.productName;
     await Product.update(
       {
-        productName: req.body.productName,
+        productName: productName,
         description: req.body.description,
         image: req.body.image,
         price: req.body.price,
         stock: req.body.stock,
         featured: req.body.featured,
-        slug: "",
+        slug: productName,
       },
       {
         where: { id: req.params.id },
@@ -23,14 +24,15 @@ const adminController = {
     res.json("/admin");
   },
   store: async (req, res) => {
+    const productName = req.body.productName;
     await Product.create({
-      productName: req.body.productName,
+      productName: productName,
       description: req.body.description,
       image: req.body.image,
       price: req.body.price,
       stock: req.body.stock,
       featured: req.body.featured,
-      slug: "",
+      slug: productName,
     });
     res.json("Me cree");
   },

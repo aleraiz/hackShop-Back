@@ -1,6 +1,8 @@
 const { Product } = require("../models");
+const slugify = require("slugify");
 
 module.exports = async function () {
+  const productName = "Platycerium bifurcatum M-15";
   const product = [
     {
       productName: "Platycerium bifurcatum M-15",
@@ -19,10 +21,24 @@ module.exports = async function () {
           imageThree:
             "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(1).JPG",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+        },
       ],
       price: "4.60",
       featured: false,
-      slug: "",
+      slug: slugify(productName, {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 1,
     },
     {
@@ -42,10 +58,24 @@ module.exports = async function () {
           imageThree:
             "https://www.tusplantasonline.com/img/galeria/570/planta_se%C3%B1ora.JPG",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+        },
       ],
       price: "6.65",
       featured: true,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 2,
     },
     {
@@ -65,10 +95,24 @@ module.exports = async function () {
           imageThree:
             "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
       ],
       price: "5.95",
       featured: false,
-      slug: "",
+      slug: slugify("Blechnum silver lady (helecho) M-15", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 2,
     },
     {
@@ -87,10 +131,24 @@ module.exports = async function () {
         {
           imageThree: "",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        },
       ],
       price: "6.60",
       featured: false,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 1,
     },
     {
@@ -109,10 +167,24 @@ module.exports = async function () {
         {
           imageThree: "",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        },
       ],
       price: "6,60",
       featured: true,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 2,
     },
     {
@@ -132,10 +204,25 @@ module.exports = async function () {
           imageThree:
             "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(5).JPG",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+        },
       ],
+
       price: "5.99",
       featured: false,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 2,
     },
     {
@@ -155,10 +242,24 @@ module.exports = async function () {
           imageThree:
             "https://www.tusplantasonline.com/img/galeria/570/petunia_bicolor.JPG",
         },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+        },
       ],
       price: "3.65",
       featured: false,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 1,
     },
     {
@@ -175,57 +276,28 @@ module.exports = async function () {
             "https://www.tusplantasonline.com/img/galeria/570/celosia_plumosa_(2).JPG",
         },
         {
-          imageThree: "",
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/celosia_plumosa_(2).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
         },
       ],
       price: "5.70",
       featured: true,
-      slug: "",
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
       categoryId: 2,
-    },
-    {
-      productName: "Carex bronze M-15 (gramineas)",
-      description:
-        "Carex bronze, es una planta perenne con hojas largas, delgadas y arqueadas. Se trata de un planta muy resistente que es perfecta como planta de decoración para exteriores, se puede plantar aislada o en grupo para crear un efecto visual de manto. Su nivel de mantenimiento es bastante bajo.Requiere bastante luminosidad, se desarrolla bien en entornos de sol directo. Por lo que si decidimos tenerla en interior, debemos buscar una zona que tenga luz en abundancia durante el día.En cuanto al riego, debemos mantener el sustrato húmedo pero sin excesos, ya que no requiere un riego muy abundante.Crece mejor en zonas con inviernos suaves pero es resistente a las heladas. Se adapta muy bien a diferentes temperaturas.",
-      image: [
-        {
-          imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/carex_bronce_m15_(1).JPG",
-        },
-        {
-          imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/carex_bronce_m15_(2).JPG",
-        },
-        {
-          imageThree: "",
-        },
-      ],
-      price: "4.95",
-      featured: true,
-      slug: "",
-      categoryId: 2,
-    },
-    {
-      productName: "Bidens ferulifolia M-13",
-      description: "",
-      image: [
-        {
-          imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(2).JPG",
-        },
-        {
-          imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(3).JPG",
-        },
-        {
-          imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(1).JPG",
-        },
-      ],
-      price: "4.10",
-      featured: true,
-      slug: "",
-      categoryId: 1,
     },
   ];
   await Product.bulkCreate(product);
