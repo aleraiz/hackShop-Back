@@ -1,5 +1,6 @@
 const bcrypt = require("bcryptjs");
 const { Buyer, Product } = require("../models");
+const jwt = require("jsonwebtoken");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll();
@@ -35,8 +36,18 @@ async function createlogin(req, res) {
   if (!verifyPassword) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
-
-  res.status(200).json(buyer);
+  const token = jwt.sign({ userId: buyer.id }, process.env.JWT_TOKEN_KEY);
+  res.status(200).json({
+    token,
+    buyer: {
+      id: buyer.id,
+      firstname: buyer.firstname,
+      lastname: buyer.lastname,
+      email: buyer.email,
+      address: buyer.email,
+      phoneNumber: buyer.phoneNumber,
+    },
+  });
 }
 
 async function storeRegister(req, res) {
@@ -49,10 +60,27 @@ async function storeRegister(req, res) {
       address: req.body.address,
       phoneNumber: req.body.phoneNumber,
     });
-    res.status(200).json(buyerCreated);
+    const token = jwt.sign(
+      { userId: buyerCreated.id },
+      process.env.JWT_TOKEN_KEY
+    );
+    res.status(200).json({
+      token,
+      buyer: {
+        id: buyerCreated.id,
+        firstname: buyerCreated.firstname,
+        lastname: buyerCreated.lastname,
+        email: buyerCreated.email,
+        address: buyerCreated.email,
+        phoneNumber: buyerCreated.phoneNumber,
+      },
+    });
   } catch {
     return res.status(409).json({ error: "Email already exists" });
   }
+}
+async function myAccount(req, res) {
+  res.send("entraste");
 }
 
 module.exports = {
@@ -61,4 +89,5 @@ module.exports = {
   indexCategory,
   createlogin,
   storeRegister,
+  myAccount,
 };
