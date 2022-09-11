@@ -299,6 +299,301 @@ module.exports = async function () {
       }),
       categoryId: 2,
     },
+    {
+      productName: "Amaranthus hybridus",
+      description:
+        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+      ],
+      price: "5.95",
+      featured: false,
+      slug: slugify("Blechnum silver lady (helecho) M-15", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Amaranthus hybridus",
+      description:
+        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+      ],
+      price: "5.95",
+      featured: false,
+      slug: slugify("Blechnum silver lady (helecho) M-15", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Amaranthus hybridus",
+      description:
+        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+      ],
+      price: "5.95",
+      featured: false,
+      slug: slugify("Blechnum silver lady (helecho) M-15", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Amaranthus hybridus",
+      description:
+        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+      ],
+      price: "5.95",
+      featured: false,
+      slug: slugify("Blechnum silver lady (helecho) M-15", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Phlebodium aureum (helecho) M-15",
+      description:
+        "Phlebodium aureum blue star, conocido como helecho palma, es una variedad de helecho muy elegante por sus grandes hojas de color verde azulado con márgenes ondulados.La vistosidad de sus hojas hace a este helecho una planta ideal para decorar el interior de la vivienda.Es una planta de interior en lugar húmedo e iluminado. También puede situarse en exterior en sombra o semisombra, donde no reciba sol directo y disponga de suficiente humedad.El phlebodium es una planta que necesita bastante humedad, por lo que se recomienda pulverizarla y regarla por la base con un recipiente con agua que retiraremos una vez haya absorbido la necesaria.Se deben evitar los ambientes secos producidos por la calefacción, perjudiciales para el helecho.No tolera temperaturas frías, viento y heladas, así como los cambios bruscos de temperatura. ",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+        },
+        {
+          imageThree: "",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        },
+      ],
+      price: "6.60",
+      featured: false,
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 1,
+    },
+    {
+      productName: "Phlebodium aureum (helecho) M-15",
+      description:
+        "Phlebodium aureum blue star, conocido como helecho palma, es una variedad de helecho muy elegante por sus grandes hojas de color verde azulado con márgenes ondulados.La vistosidad de sus hojas hace a este helecho una planta ideal para decorar el interior de la vivienda.Es una planta de interior en lugar húmedo e iluminado. También puede situarse en exterior en sombra o semisombra, donde no reciba sol directo y disponga de suficiente humedad.El phlebodium es una planta que necesita bastante humedad, por lo que se recomienda pulverizarla y regarla por la base con un recipiente con agua que retiraremos una vez haya absorbido la necesaria.Se deben evitar los ambientes secos producidos por la calefacción, perjudiciales para el helecho.No tolera temperaturas frías, viento y heladas, así como los cambios bruscos de temperatura. ",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+        },
+        {
+          imageThree: "",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        },
+      ],
+      price: "6,60",
+      featured: true,
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Gerbera M-15",
+      description:
+        "Gerbera, también conocida como Margarita africana, es una planta con grandes flores similares a la flor de la margarita y en una amplia gama de colores.¿Dónde colocarla?.Se trata de una planta de exterior en semisombra o para interiores iluminados.Luz/Temperatura.Necesita luz moderada, es decir, semisombra. Se trata de una planta sensible al frío necesita un clima cálido.Suelo/Abonado.Necesita que la tierra esté bien drenada. Se recomienda un abonado en los meses de primavera y verano, con abono orgánico líquido.Riego.El exceso de agua es perjudicial para la planta, por lo tanto necesita un riego moderado. Sustrato húmedo pero sin excesos.",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(2).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(3).JP",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(5).JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+        },
+      ],
+
+      price: "5.99",
+      featured: false,
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 2,
+    },
+    {
+      productName: "Petunia grandiflora M-15",
+      description:
+        "  *Mezcladas dos plantas de distintos colores en la misma maceta.Petunia grandiflora, es una de las plantas más conocidas y populares tanto por su abundante floración de una amplia gama de colores, por su fácil cultivo. Es una planta de temporada, cuyas hojas son ovaladas de color verde claro y sus flores que van desde el rojo, rosa, azul, púrpura, bicolor…., que aparecen a principios de primavera y se mantienen hasta el final del otoño. La Petunia es una planta ornamental, utilizada en maceta para decorar balcones y ventanas y formando borduras en jardines. Es una planta de exterior, preferiblemente a pleno sol o en semisombra, y en invierno es aconsejable resguardarla, ya que soporta el frío pero no las heladas. Su riego debe ser abundante, sin mojar las flores y evitando el riego en las horas centrales",
+      image: [
+        {
+          imageOne:
+            "https://www.tusplantasonline.com/img/galeria/570/petunia_grandiflora_(1).JPG",
+        },
+        {
+          imageTwo:
+            "https://www.tusplantasonline.com/img/galeria/570/petunia_2_colores.JPG",
+        },
+        {
+          imageThree:
+            "https://www.tusplantasonline.com/img/galeria/570/petunia_bicolor.JPG",
+        },
+        {
+          imageDetailOne:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+        },
+        {
+          imageDetailTwo:
+            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+        },
+      ],
+      price: "3.65",
+      featured: false,
+      slug: slugify("productName", {
+        replacement: "-",
+        lower: true,
+        strict: true,
+        locale: "en",
+        trim: true,
+      }),
+      categoryId: 1,
+    },
   ];
   await Product.bulkCreate(product);
 };
