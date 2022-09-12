@@ -24,4 +24,6 @@ publicRoutes.use(
 
 publicRoutes.get("/myaccount", pagesControllers.myAccount);
 
+publicRoutes.post("/logout", pagesControllers.logoutUser);
+
 module.exports = publicRoutes;

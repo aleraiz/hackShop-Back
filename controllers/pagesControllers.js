@@ -79,8 +79,16 @@ async function storeRegister(req, res) {
     return res.status(409).json({ error: "Email already exists" });
   }
 }
+
 async function myAccount(req, res) {
   res.send("entraste");
+}
+
+async function logoutUser(req, res) {
+  if (!req.auth) {
+    return res.status(401).json({ error: "Usuario no encontrado" });
+  }
+  res.sendStatus(200);
 }
 
 module.exports = {
@@ -90,4 +98,5 @@ module.exports = {
   createlogin,
   storeRegister,
   myAccount,
+  logoutUser,
 };
