@@ -1,5 +1,6 @@
 const bcrypt = require("bcryptjs");
-const { Buyer, Product } = require("../models");
+const { Client, Product } = require("../models");
+const jwt = require("jsonwebtoken");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll();
@@ -19,29 +20,39 @@ async function indexCategory(req, res) {
 }
 
 async function createlogin(req, res) {
-  const buyer = await Buyer.findOne({
+  const client = await Client.findOne({
     where: { email: req.body.email },
   });
 
-  if (!buyer) {
+  if (!client) {
     return res.status(409).json({ error: "Email already not exists" });
   }
 
   const verifyPassword = await bcrypt.compare(
     req.body.password,
-    buyer.password
+    client.password
   );
 
   if (!verifyPassword) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
-
-  res.status(200).json(buyer);
+  const token = jwt.sign({ userId: client.id }, process.env.JWT_TOKEN_KEY);
+  res.status(200).json({
+    token,
+    client: {
+      id: client.id,
+      firstname: client.firstname,
+      lastname: client.lastname,
+      email: client.email,
+      address: client.email,
+      phoneNumber: client.phoneNumber,
+    },
+  });
 }
 
 async function storeRegister(req, res) {
   try {
-    const buyerCreated = await Buyer.create({
+    const clientCreated = await Client.create({
       firstname: req.body.email,
       lastname: req.body.lastname,
       email: req.body.email,
@@ -49,7 +60,21 @@ async function storeRegister(req, res) {
       address: req.body.address,
       phoneNumber: req.body.phoneNumber,
     });
-    res.status(200).json(buyerCreated);
+    const token = jwt.sign(
+      { userId: clientCreated.id },
+      process.env.JWT_TOKEN_KEY
+    );
+    res.status(200).json({
+      token,
+      client: {
+        id: clientCreated.id,
+        firstname: clientCreated.firstname,
+        lastname: clientCreated.lastname,
+        email: clientCreated.email,
+        address: clientCreated.email,
+        phoneNumber: clientCreated.phoneNumber,
+      },
+    });
   } catch {
     return res.status(409).json({ error: "Email already exists" });
   }

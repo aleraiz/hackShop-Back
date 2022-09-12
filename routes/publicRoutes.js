@@ -2,10 +2,6 @@ const pagesControllers = require("../controllers/pagesControllers");
 const express = require("express");
 const publicRoutes = express.Router();
 
-publicRoutes.get("/", (req, res) => {
-  res.send("soy el HOME");
-});
-
 publicRoutes.post("/token", pagesControllers.createlogin);
 
 publicRoutes.post("/register", pagesControllers.storeRegister);

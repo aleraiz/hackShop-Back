@@ -17,7 +17,7 @@ module.exports = async function () {
       ],
       paymentMethod: "Visa Crédito",
       address: "Rivera 2342",
-      buyerId: 2,
+      clientId: 2,
     },
     {
       productList: [
@@ -34,7 +34,7 @@ module.exports = async function () {
       ],
       paymentMethod: "Visa Crédito",
       address: "Soca 1342",
-      buyerId: 1,
+      clientId: 1,
     },
     {
       productList: [
@@ -51,7 +51,7 @@ module.exports = async function () {
       ],
       paymentMethod: "Visa Débito",
       address: "Ponce 4334",
-      buyerId: 3,
+      clientId: 3,
     },
   ];
   await Order.bulkCreate(order);

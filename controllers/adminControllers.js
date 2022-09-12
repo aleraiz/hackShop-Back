@@ -1,5 +1,7 @@
 const { Product } = require("../models");
 const slugify = require("slugify");
+const jwt = require("jsonwebtoken");
+
 const adminController = {
   indexAdmin: async (req, res) => {
     const products = await Product.findAll({ order: [["createdAt", "DESC"]] });

@@ -1,7 +1,7 @@
-const { Buyer } = require("../models");
+const { Client } = require("../models");
 
 module.exports = async function () {
-  const buyer = [
+  const client = [
     {
       firstname: "Juan",
       lastname: "Sanchez",
@@ -29,5 +29,5 @@ module.exports = async function () {
       phoneNumber: "132154638",
     },
   ];
-  await Buyer.bulkCreate(buyer);
+  await Client.bulkCreate(client);
 };
