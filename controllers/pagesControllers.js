@@ -13,7 +13,7 @@ async function indexProductId(req, res) {
 
 async function indexCategory(req, res) {
   const product = await Product.findAll({
-    where: { categoryId: req.body.category },
+    where: { categoryId: req.params.category },
   });
   res.json(product);
 }
