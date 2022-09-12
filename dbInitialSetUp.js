@@ -4,7 +4,6 @@ const administratorSeeder = require("./seeders/administratorSeeder");
 const productSeeder = require("./seeders/productSeeder");
 const categorySeeder = require("./seeders/categorySeeder");
 const orderSeeder = require("./seeders/orderSeeder");
-const purchaseHistorySeeder = require("./seeders/purchaseHistorySeeder");
 const clientSeeder = require("./seeders/clientSeeder");
 
 module.exports = async function () {
@@ -14,6 +13,5 @@ module.exports = async function () {
   await categorySeeder();
   await orderSeeder();
   await productSeeder();
-  await purchaseHistorySeeder();
   console.log("Se crearon las tablas");
 };
