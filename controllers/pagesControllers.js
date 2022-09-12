@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs");
-const { Buyer, Product } = require("../models");
+const { Client, Product } = require("../models");
 const jwt = require("jsonwebtoken");
 
 async function indexProducts(req, res) {
@@ -20,39 +20,39 @@ async function indexCategory(req, res) {
 }
 
 async function createlogin(req, res) {
-  const buyer = await Buyer.findOne({
+  const client = await Client.findOne({
     where: { email: req.body.email },
   });
 
-  if (!buyer) {
+  if (!client) {
     return res.status(409).json({ error: "Email already not exists" });
   }
 
   const verifyPassword = await bcrypt.compare(
     req.body.password,
-    buyer.password
+    client.password
   );
 
   if (!verifyPassword) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
-  const token = jwt.sign({ userId: buyer.id }, process.env.JWT_TOKEN_KEY);
+  const token = jwt.sign({ userId: client.id }, process.env.JWT_TOKEN_KEY);
   res.status(200).json({
     token,
-    buyer: {
-      id: buyer.id,
-      firstname: buyer.firstname,
-      lastname: buyer.lastname,
-      email: buyer.email,
-      address: buyer.email,
-      phoneNumber: buyer.phoneNumber,
+    client: {
+      id: client.id,
+      firstname: client.firstname,
+      lastname: client.lastname,
+      email: client.email,
+      address: client.email,
+      phoneNumber: client.phoneNumber,
     },
   });
 }
 
 async function storeRegister(req, res) {
   try {
-    const buyerCreated = await Buyer.create({
+    const clientCreated = await Client.create({
       firstname: req.body.email,
       lastname: req.body.lastname,
       email: req.body.email,
@@ -61,34 +61,23 @@ async function storeRegister(req, res) {
       phoneNumber: req.body.phoneNumber,
     });
     const token = jwt.sign(
-      { userId: buyerCreated.id },
+      { userId: clientCreated.id },
       process.env.JWT_TOKEN_KEY
     );
     res.status(200).json({
       token,
-      buyer: {
-        id: buyerCreated.id,
-        firstname: buyerCreated.firstname,
-        lastname: buyerCreated.lastname,
-        email: buyerCreated.email,
-        address: buyerCreated.email,
-        phoneNumber: buyerCreated.phoneNumber,
+      client: {
+        id: clientCreated.id,
+        firstname: clientCreated.firstname,
+        lastname: clientCreated.lastname,
+        email: clientCreated.email,
+        address: clientCreated.email,
+        phoneNumber: clientCreated.phoneNumber,
       },
     });
   } catch {
     return res.status(409).json({ error: "Email already exists" });
   }
-}
-
-async function myAccount(req, res) {
-  res.send("entraste");
-}
-
-async function logoutUser(req, res) {
-  if (!req.auth) {
-    return res.status(401).json({ error: "Usuario no encontrado" });
-  }
-  res.sendStatus(200);
 }
 
 module.exports = {
@@ -97,6 +86,4 @@ module.exports = {
   indexCategory,
   createlogin,
   storeRegister,
-  myAccount,
-  logoutUser,
 };

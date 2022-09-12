@@ -5,12 +5,12 @@ const productSeeder = require("./seeders/productSeeder");
 const categorySeeder = require("./seeders/categorySeeder");
 const orderSeeder = require("./seeders/orderSeeder");
 const purchaseHistorySeeder = require("./seeders/purchaseHistorySeeder");
-const buyerSeeder = require("./seeders/buyerSeeder");
+const clientSeeder = require("./seeders/clientSeeder");
 
 module.exports = async function () {
   await db.sequelize.sync({ force: true });
   await administratorSeeder();
-  await buyerSeeder();
+  await clientSeeder();
   await categorySeeder();
   await orderSeeder();
   await productSeeder();

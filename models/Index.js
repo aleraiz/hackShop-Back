@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
 );
 
 const Administrator = require("./Administrator")(sequelize, Model, DataTypes);
-const Buyer = require("./Buyer")(sequelize, Model, DataTypes);
+const Client = require("./Client")(sequelize, Model, DataTypes);
 const Category = require("./Category")(sequelize, Model, DataTypes);
 const Order = require("./Order")(sequelize, Model, DataTypes);
 const Product = require("./Product")(sequelize, Model, DataTypes);
@@ -23,8 +23,8 @@ const PurchaseHistory = require("./PurchaseHistory")(
 );
 
 // Relations
-Buyer.hasMany(Order);
-Order.belongsTo(Buyer);
+Client.hasMany(Order);
+Order.belongsTo(Client);
 
 Order.hasMany(Product);
 Product.belongsTo(Order);
@@ -32,17 +32,12 @@ Product.belongsTo(Order);
 Category.hasMany(Product);
 Product.belongsTo(Category);
 
-// Buyer.hasMany(PurchaseHistory);
-// PurchaseHistory.belongsTo(Buyer);
-
-// PurchaseHistory.hasMany(Order);
-// Order.belongsTo(PurchaseHistory);
 Order.hasMany(PurchaseHistory);
 PurchaseHistory.belongsTo(Order);
 
 module.exports = {
   sequelize,
-  Buyer,
+  Client,
   Category,
   Administrator,
   Order,
