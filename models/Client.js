@@ -1,9 +1,9 @@
 const bcrypt = require("bcryptjs");
 
 module.exports = (sequelize, Model, DataTypes) => {
-  class Buyer extends Model {}
+  class Client extends Model {}
 
-  Buyer.init(
+  Client.init(
     {
       id: {
         type: DataTypes.INTEGER.UNSIGNED,
@@ -38,7 +38,7 @@ module.exports = (sequelize, Model, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "buyer",
+      modelName: "client",
       hooks: {
         beforeBulkCreate: async (users, options) => {
           for (const user of users) {
@@ -51,5 +51,5 @@ module.exports = (sequelize, Model, DataTypes) => {
       },
     }
   );
-  return Buyer;
+  return Client;
 };
