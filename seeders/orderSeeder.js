@@ -20,13 +20,35 @@ module.exports = async function () {
       clientId: 2,
     },
     {
-      productList: [4, 2, 3],
+      productList: [
+        {
+          id: 1,
+          quantity: 1,
+          price: 14,
+        },
+        {
+          id: 4,
+          quantity: 3,
+          price: 11,
+        },
+      ],
       paymentMethod: "Visa Crédito",
       address: "Soca 1342",
       clientId: 1,
     },
     {
-      productList: [5, 6, 7, 8],
+      productList: [
+        {
+          id: 1,
+          quantity: 1,
+          price: 14,
+        },
+        {
+          id: 4,
+          quantity: 3,
+          price: 11,
+        },
+      ],
       paymentMethod: "Visa Débito",
       address: "Ponce 4334",
       clientId: 3,

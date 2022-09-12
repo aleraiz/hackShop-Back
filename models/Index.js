@@ -26,8 +26,8 @@ const PurchaseHistory = require("./PurchaseHistory")(
 Client.hasMany(Order);
 Order.belongsTo(Client);
 
-Order.hasMany(Product);
-Product.belongsTo(Order);
+// Order.hasMany(Product);
+// Product.belongsTo(Order);
 
 Category.hasMany(Product);
 Product.belongsTo(Category);
