@@ -44,7 +44,7 @@ async function createlogin(req, res) {
       firstname: client.firstname,
       lastname: client.lastname,
       email: client.email,
-      address: client.email,
+      address: client.address,
       phoneNumber: client.phoneNumber,
     },
   });
@@ -53,7 +53,7 @@ async function createlogin(req, res) {
 async function storeRegister(req, res) {
   try {
     const clientCreated = await Client.create({
-      firstname: req.body.email,
+      firstname: req.body.firstname,
       lastname: req.body.lastname,
       email: req.body.email,
       password: req.body.password,
@@ -71,7 +71,7 @@ async function storeRegister(req, res) {
         firstname: clientCreated.firstname,
         lastname: clientCreated.lastname,
         email: clientCreated.email,
-        address: clientCreated.email,
+        address: clientCreated.address,
         phoneNumber: clientCreated.phoneNumber,
       },
     });
