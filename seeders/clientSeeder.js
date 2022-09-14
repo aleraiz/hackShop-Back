@@ -10,6 +10,14 @@ module.exports = async function () {
       address: [],
       phoneNumber: "13215468",
     },
+    {
+      firstname: "User",
+      lastname: "User",
+      email: "user@user.com",
+      password: "123",
+      address: [],
+      phoneNumber: "13215468",
+    },
 
     {
       firstname: "Roberto",
