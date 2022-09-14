@@ -40,11 +40,6 @@ module.exports = (sequelize, Model, DataTypes) => {
       sequelize,
       modelName: "client",
       hooks: {
-        beforeBulkCreate: async (users, options) => {
-          for (const user of users) {
-            user.password = await bcrypt.hash(user.password, 10);
-          }
-        },
         beforeCreate: async (user, options) => {
           user.password = await bcrypt.hash(user.password, 10);
         },
