@@ -1,4 +1,5 @@
 const { Client } = require("../models");
+const jwt = require("jsonwebtoken");
 
 async function myAccount(req, res) {
   const client = Client.findByPk(req.auth.id);

@@ -72,7 +72,7 @@ async function storeRegister(req, res) {
         firstname: clientCreated.firstname,
         lastname: clientCreated.lastname,
         email: clientCreated.email,
-        address: clientCreated.email,
+        address: clientCreated.address,
         phoneNumber: clientCreated.phoneNumber,
       },
     });
