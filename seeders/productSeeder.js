@@ -32,6 +32,7 @@ module.exports = async function () {
       ],
       price: 4.6,
       featured: false,
+      stock: 15,
       slug: slugify(productName, {
         replacement: "-",
         lower: true,
@@ -69,6 +70,7 @@ module.exports = async function () {
       ],
       price: 6.65,
       featured: true,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -106,6 +108,7 @@ module.exports = async function () {
       ],
       price: 5.95,
       featured: false,
+      stock: 15,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
         lower: true,
@@ -142,6 +145,7 @@ module.exports = async function () {
       ],
       price: 6.6,
       featured: false,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -178,6 +182,7 @@ module.exports = async function () {
       ],
       price: 6.6,
       featured: true,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -216,6 +221,7 @@ module.exports = async function () {
 
       price: 4.99,
       featured: false,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -253,6 +259,7 @@ module.exports = async function () {
       ],
       price: 3.65,
       featured: false,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -290,6 +297,7 @@ module.exports = async function () {
       ],
       price: 8.7,
       featured: true,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -327,6 +335,7 @@ module.exports = async function () {
       ],
       price: 8.95,
       featured: false,
+      stock: 15,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
         lower: true,
@@ -364,6 +373,7 @@ module.exports = async function () {
       ],
       price: 5.95,
       featured: false,
+      stock: 15,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
         lower: true,
@@ -401,6 +411,7 @@ module.exports = async function () {
       ],
       price: 5.95,
       featured: false,
+      stock: 15,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
         lower: true,
@@ -438,6 +449,7 @@ module.exports = async function () {
       ],
       price: 5.95,
       featured: false,
+      stock: 15,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
         lower: true,
@@ -473,6 +485,7 @@ module.exports = async function () {
         },
       ],
       price: 6.6,
+      stock: 15,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -510,6 +523,7 @@ module.exports = async function () {
       ],
       price: 6.6,
       featured: true,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -548,6 +562,7 @@ module.exports = async function () {
 
       price: 5.99,
       featured: false,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
@@ -585,6 +600,7 @@ module.exports = async function () {
       ],
       price: 3.65,
       featured: false,
+      stock: 15,
       slug: slugify("productName", {
         replacement: "-",
         lower: true,
