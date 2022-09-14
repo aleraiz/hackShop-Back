@@ -21,7 +21,7 @@ module.exports = (sequelize, Model, DataTypes) => {
         allowNull: false,
       },
       price: {
-        type: DataTypes.STRING(30),
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
       stock: {

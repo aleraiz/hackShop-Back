@@ -30,7 +30,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
         },
       ],
-      price: "4.60",
+      price: 4.6,
       featured: false,
       slug: slugify(productName, {
         replacement: "-",
@@ -67,7 +67,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
         },
       ],
-      price: "6.65",
+      price: 6.65,
       featured: true,
       slug: slugify("productName", {
         replacement: "-",
@@ -104,7 +104,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         },
       ],
-      price: "5.95",
+      price: 5.95,
       featured: false,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
@@ -140,7 +140,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
         },
       ],
-      price: "6.60",
+      price: 6.6,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -176,7 +176,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
         },
       ],
-      price: "6,60",
+      price: 6.6,
       featured: true,
       slug: slugify("productName", {
         replacement: "-",
@@ -214,7 +214,7 @@ module.exports = async function () {
         },
       ],
 
-      price: "5.99",
+      price: 4.99,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -228,7 +228,7 @@ module.exports = async function () {
     {
       productName: "Petunia grandiflora M-15",
       description:
-        "Mixed two plants of different colors in the same pot.Petunia grandiflora, is one of the most well-known and popular plants both for its abundant flowering of a wide range of colors, for its easy cultivation. It is a seasonal plant, whose leaves are oval light green and its flowers ranging from red, pink, blue, purple, purple, bicolor...., which appear in early spring and remain until late autumn. Petunia is an ornamental plant, used in pots to decorate balconies and windows and forming borders in gardens. It is an outdoor plant, preferably in full sun or semi-shade, and in winter it is advisable to shelter it, as it withstands the cold but not frost. Its watering should be abundant, without wetting the flowers and avoiding watering in the central hours",
+        "Mixed two plants of different colors in the same pot.Petunia grandiflora, is one of the most well-known and popular plants both for its abundant flowering of a wide range of colors, for its easy cultivation. It is a seasonal plant, whose leaves are oval light green and its flowers ranging from red, pink, blue, purple, purple, bicolor...., which appear in early spring and remain until late autumn. Petunia is an ornamental plant, used in pots to decorate balconies and windows and forming borders in gardens. It is an outdoor plant, preferably in full sun or semi-shade, and in winter it is advisable to shelter it, as it withstands the cold but not frost. Its watering should be abundant, without wetting the flowers and avoiding watering in the central hours.",
       image: [
         {
           imageOne:
@@ -251,7 +251,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
         },
       ],
-      price: "3.65",
+      price: 3.65,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -288,7 +288,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
         },
       ],
-      price: "5.70",
+      price: 8.7,
       featured: true,
       slug: slugify("productName", {
         replacement: "-",
@@ -325,7 +325,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         },
       ],
-      price: "5.95",
+      price: 8.95,
       featured: false,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
@@ -362,7 +362,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         },
       ],
-      price: "5.95",
+      price: 5.95,
       featured: false,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
@@ -399,7 +399,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         },
       ],
-      price: "5.95",
+      price: 5.95,
       featured: false,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
@@ -436,7 +436,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         },
       ],
-      price: "5.95",
+      price: 5.95,
       featured: false,
       slug: slugify("Blechnum silver lady (helecho) M-15", {
         replacement: "-",
@@ -472,7 +472,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
         },
       ],
-      price: "6.60",
+      price: 6.6,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -508,7 +508,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
         },
       ],
-      price: "6,60",
+      price: 6.6,
       featured: true,
       slug: slugify("productName", {
         replacement: "-",
@@ -546,7 +546,7 @@ module.exports = async function () {
         },
       ],
 
-      price: "5.99",
+      price: 5.99,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",
@@ -583,7 +583,7 @@ module.exports = async function () {
             "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
         },
       ],
-      price: "3.65",
+      price: 3.65,
       featured: false,
       slug: slugify("productName", {
         replacement: "-",

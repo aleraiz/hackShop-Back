@@ -23,7 +23,7 @@ async function createlogin(req, res) {
   const client = await Client.findOne({
     where: { email: req.body.email },
   });
-
+  console.log(client);
   if (!client) {
     return res.status(409).json({ error: "Email already not exists" });
   }
@@ -37,6 +37,7 @@ async function createlogin(req, res) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
   const token = jwt.sign({ userId: client.id }, process.env.JWT_TOKEN_KEY);
+
   res.status(200).json({
     token,
     client: {
