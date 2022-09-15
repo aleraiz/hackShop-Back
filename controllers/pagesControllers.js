@@ -8,7 +8,8 @@ async function indexProducts(req, res) {
 }
 
 async function indexProductId(req, res) {
-  const product = await Product.findByPk(req.params.id);
+  // const product = await Product.findByPk(req.params.id);
+  const product = await Product.findOne({ where: { slug: req.params.slug } });
   res.json(product);
 }
 

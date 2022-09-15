@@ -3,7 +3,7 @@ const slugify = require("slugify");
 
 module.exports = async function () {
   const productName = "Platycerium bifurcatum M-15";
-  const product = [
+  const products = [
     {
       productName: "Platycerium bifurcatum M-15",
       description:
@@ -33,13 +33,6 @@ module.exports = async function () {
       price: 4.6,
       featured: false,
       stock: 15,
-      slug: slugify(productName, {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 1,
     },
     {
@@ -71,13 +64,6 @@ module.exports = async function () {
       price: 6.65,
       featured: true,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -109,13 +95,6 @@ module.exports = async function () {
       price: 5.95,
       featured: false,
       stock: 15,
-      slug: slugify("Blechnum silver lady (helecho) M-15", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -146,13 +125,6 @@ module.exports = async function () {
       price: 6.6,
       featured: false,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 1,
     },
     {
@@ -183,13 +155,6 @@ module.exports = async function () {
       price: 6.6,
       featured: true,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -222,13 +187,6 @@ module.exports = async function () {
       price: 4.99,
       featured: false,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -260,13 +218,6 @@ module.exports = async function () {
       price: 3.65,
       featured: false,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 1,
     },
     {
@@ -298,13 +249,6 @@ module.exports = async function () {
       price: 8.7,
       featured: true,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -336,13 +280,6 @@ module.exports = async function () {
       price: 8.95,
       featured: false,
       stock: 15,
-      slug: slugify("Blechnum silver lady (helecho) M-15", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -374,13 +311,6 @@ module.exports = async function () {
       price: 5.95,
       featured: false,
       stock: 15,
-      slug: slugify("Blechnum silver lady (helecho) M-15", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -412,13 +342,6 @@ module.exports = async function () {
       price: 5.95,
       featured: false,
       stock: 15,
-      slug: slugify("Blechnum silver lady (helecho) M-15", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -450,13 +373,6 @@ module.exports = async function () {
       price: 5.95,
       featured: false,
       stock: 15,
-      slug: slugify("Blechnum silver lady (helecho) M-15", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -487,13 +403,6 @@ module.exports = async function () {
       price: 6.6,
       stock: 15,
       featured: false,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 1,
     },
     {
@@ -524,13 +433,6 @@ module.exports = async function () {
       price: 6.6,
       featured: true,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -563,13 +465,6 @@ module.exports = async function () {
       price: 5.99,
       featured: false,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 2,
     },
     {
@@ -601,15 +496,8 @@ module.exports = async function () {
       price: 3.65,
       featured: false,
       stock: 15,
-      slug: slugify("productName", {
-        replacement: "-",
-        lower: true,
-        strict: true,
-        locale: "en",
-        trim: true,
-      }),
       categoryId: 1,
     },
   ];
-  await Product.bulkCreate(product);
+  await Product.bulkCreate(products);
 };
