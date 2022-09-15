@@ -11,4 +11,6 @@ userRoutes.get("/myaccount", userControllers.myAccount);
 
 userRoutes.post("/logout", userControllers.logoutUser);
 
+userRoutes.post("/order", userControllers.orderSend);
+
 module.exports = userRoutes;

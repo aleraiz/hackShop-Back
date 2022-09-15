@@ -1,4 +1,4 @@
-const { Client } = require("../models");
+const { Client, Order } = require("../models");
 const jwt = require("jsonwebtoken");
 
 async function myAccount(req, res) {
@@ -13,7 +13,18 @@ async function logoutUser(req, res) {
   res.sendStatus(200);
 }
 
+async function orderSend(req, res) {
+  await Order.create({
+    productList: req.body.productList,
+    paymentMethod: "visa Crédito",
+    address: req.body.address,
+    clientId: req.auth.userId,
+  });
+  res.json("Me cree");
+}
+
 module.exports = {
   myAccount,
   logoutUser,
+  orderSend,
 };
