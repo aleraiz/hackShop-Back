@@ -3,9 +3,9 @@ const adminRoutes = express.Router();
 const adminController = require("../controllers/adminControllers");
 const { expressjwt: checkJwt } = require("express-jwt");
 
-adminRoutes.use(
-  checkJwt({ secret: process.env.JWT_TOKEN_KEY, algorithms: ["HS256"] })
-);
+// adminRoutes.use(
+//   checkJwt({ secret: process.env.JWT_TOKEN_KEY, algorithms: ["HS256"] })
+// );
 
 adminRoutes.get("/admin", adminController.indexAdmin);
 adminRoutes.post("/admin", adminController.store);
