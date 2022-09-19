@@ -2,7 +2,6 @@ const { Product } = require("../models");
 const slugify = require("slugify");
 
 module.exports = async function () {
-  const productName = "Platycerium bifurcatum M-15";
   const products = [
     {
       productName: "Platycerium bifurcatum M-15",
@@ -85,11 +84,11 @@ module.exports = async function () {
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663602790/ecommerce/m8mtlur17cazqiyjzbaq.jpg",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663602837/ecommerce/vgv6ytzqpl2y241mivs4.png",
         },
       ],
       price: 5.95,
@@ -98,9 +97,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Phlebodium aureum (helecho) M-15",
+      productName: "Calibrachoa M-13",
       description:
-        "Phlebodium aureum blue star, known as palm fern, is a variety of fern very elegant for its large blue-green leaves with wavy margins.The showiness of its leaves makes this fern an ideal plant to decorate the interior of the house.It is a houseplant in humid and illuminated place.It can also be placed outdoors in shade or semi-shade, where it does not receive direct sun and has sufficient moisture.The phlebodium is a plant that needs plenty of moisture, so it is recommended to spray and water it. It can also be placed outdoors in shade or semi-shade, where it does not receive direct sun and has sufficient moisture.The phlebodium is a plant that needs enough moisture, so it is recommended to spray it and water it at the base with a container with water that we will remove once it has absorbed the necessary.Dry environments produced by heating should be avoided, harmful to the fern.It does not tolerate cold temperatures, wind and frost, as well as sudden changes in temperature.",
+        "Calibrachoa, known as petunia calibrachoa, is a spectacular hanging plant with an abundant and colorful flowering ideal for growing in terrines, planters, pots ... and place it on terraces, balconies .... It has a long flowering, from the beginning of spring until the end of autumn and has a wide range of colors ranging from pinks, purples, whites, yellows, oranges ... So that it blooms more abundantly it is necessary to clean it of withered flowers. It is an outdoor plant, in full sun or semi-shade. Watering should be moderate but regular during the flowering period. Avoid waterlogging and it is not advisable to wet the flowers. In winter it is convenient to shelter it, since it supports the cold but not the frosts. ",
       image: [
         {
           imageOne:
@@ -283,9 +282,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Amaranthus hybridus",
+      productName: "Portulaca umbraticola tarrina 15",
       description:
-        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+        "Portulaca Umbraticola is a creeping plant used to upholster small areas of gardens. Its leaves are lanceolate in shape and its flowers of 5 petals can be of various colors, such as yellow, red or orange. Its location is outdoors in full sun, so it is ideal for decorating gardens, balconies and terraces, although it can also be in semi-shade as long as there is plenty of light. In winter it is advisable to protect it from cold and frost. Watering should be frequent in summer, while in winter it should be reduced depending on the area. In addition, it is necessary to avoid stagnant water.",
       image: [
         {
           imageOne:
@@ -314,9 +313,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Amaranthus hybridus",
+      productName: "Osteospermum (dimorfoteca) M-15",
       description:
-        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+        "The dimorphotheca is a shrubby plant, fast growing, very hardy and easy to grow. Its flower is very similar to that of the daisy, with a darker center and bright pink, lilac and white colors, blooming from winter to spring. The flower of the dimorphotheca closes at night. It is an outdoor plant in full sun, in climates with mild temperatures. It does not tolerate hard frosts. Its irrigation should be moderate in well-drained soil, to avoid excess moisture and waterlogging. It tolerates some drought.",
       image: [
         {
           imageOne:
@@ -345,9 +344,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Amaranthus hybridus",
+      productName: "Crassula T-15",
       description:
-        "Es una hierba anual, con tallos erectos, glabros abajo, tornándose subglabros o escasamente pubescentes hacia arriba con tricomas de hasta 1 mm de largo, muy delgados e irregularmente doblados; monoicas.",
+        "Crassulas are a variety of succulents. They are very resistant plants whose main characteristic is their capacity to store water thanks to their fleshy leaves, but also to their roots and stems. It is a very resistant plant, which needs very little care. However, they have very attractive and ornamental shapes. Where to place it? It can be placed both outdoors and indoors. It is a real all-rounder. Light/Temperature: Light is one of its main requirements. They appreciate indirect light since a very direct sun can burn their leaves. It can withstand a wide range of temperatures, even the highest. Soil/Soil: They are plants that grow even on rocks. They need a poor soil, with few minerals. A good idea would be to mix the substrate with sand.Watering: The substrate of the succulent should have a good drainage. We should only water when the substrate is about to be completely dry. In summer we can increase the frequency, but always bearing in mind that they do not need much water. ",
       image: [
         {
           imageOne:
@@ -376,9 +375,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Phlebodium aureum (helecho) M-15",
+      productName: "Alternanthera purple M-15",
       description:
-        "Phlebodium aureum blue star, conocido como helecho palma, es una variedad de helecho muy elegante por sus grandes hojas de color verde azulado con márgenes ondulados.La vistosidad de sus hojas hace a este helecho una planta ideal para decorar el interior de la vivienda.Es una planta de interior en lugar húmedo e iluminado. También puede situarse en exterior en sombra o semisombra, donde no reciba sol directo y disponga de suficiente humedad.El phlebodium es una planta que necesita bastante humedad, por lo que se recomienda pulverizarla y regarla por la base con un recipiente con agua que retiraremos una vez haya absorbido la necesaria.Se deben evitar los ambientes secos producidos por la calefacción, perjudiciales para el helecho.No tolera temperaturas frías, viento y heladas, así como los cambios bruscos de temperatura. ",
+        "The Alternanthera purple plant is also known by the common name of coquette. Its main attraction are its leaves in purple tones and oval shape. It also presents flowering periods but they are not the most outstanding aspect of this plant, however its flowers are small and white. Its frequent use is as a ground cover or to create color contrasts in gardens. Where to place it? It is a perfect outdoor plant for gardens. Although we can also place it in pots in terraces or patios. Light/Temperature: It is a plant that needs full sun exposure to develop in all its fullness. Being a tropical plant, it needs temperate climates and does not tolerate cold weather. Soil/Soil: It needs a well-drained and soft soil with a certain richness in organic matter. During the spring it is convenient to add some mineral fertilizer every two weeks. Watering: It does not need much watering, it is necessary to wait until the substrate is almost dry between waterings. The important thing is that it is never waterlogged.",
       image: [
         {
           imageOne:
@@ -406,9 +405,9 @@ module.exports = async function () {
       categoryId: 1,
     },
     {
-      productName: "Phlebodium aureum (helecho) M-15",
+      productName: "Petunia grandiflora M-11",
       description:
-        "Phlebodium aureum blue star, conocido como helecho palma, es una variedad de helecho muy elegante por sus grandes hojas de color verde azulado con márgenes ondulados.La vistosidad de sus hojas hace a este helecho una planta ideal para decorar el interior de la vivienda.Es una planta de interior en lugar húmedo e iluminado. También puede situarse en exterior en sombra o semisombra, donde no reciba sol directo y disponga de suficiente humedad.El phlebodium es una planta que necesita bastante humedad, por lo que se recomienda pulverizarla y regarla por la base con un recipiente con agua que retiraremos una vez haya absorbido la necesaria.Se deben evitar los ambientes secos producidos por la calefacción, perjudiciales para el helecho.No tolera temperaturas frías, viento y heladas, así como los cambios bruscos de temperatura. ",
+        "It is a seasonal plant, whose leaves are light green oval and its flowers ranging from red, pink, blue, purple, purple, bicolor...., which appear in early spring and remain until late autumn. Petunia is an ornamental plant, used in pots to decorate balconies and windows and forming borders in gardens. It is an outdoor plant, preferably in full sun or semi-shade, and in winter it is advisable to shelter it, as it withstands the cold but not frost. Watering should be abundant, without wetting the flowers and avoiding watering in the central hours of the day.",
       image: [
         {
           imageOne:
@@ -436,9 +435,9 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Gerbera M-15",
+      productName: "Celosia plumosa M-15 para jardinería",
       description:
-        "Gerbera, también conocida como Margarita africana, es una planta con grandes flores similares a la flor de la margarita y en una amplia gama de colores.¿Dónde colocarla?.Se trata de una planta de exterior en semisombra o para interiores iluminados.Luz/Temperatura.Necesita luz moderada, es decir, semisombra. Se trata de una planta sensible al frío necesita un clima cálido.Suelo/Abonado.Necesita que la tierra esté bien drenada. Se recomienda un abonado en los meses de primavera y verano, con abono orgánico líquido.Riego.El exceso de agua es perjudicial para la planta, por lo tanto necesita un riego moderado. Sustrato húmedo pero sin excesos.",
+        "Celosia argentea plumosa, this variety is taller than the usual variety which is more compact. It is perfect for gardens but it can also be grown in pots, its leaves and reddish flowers stand out. This plant has an erect stem with long, lance-shaped, light green leaves. Its feathery flowers are small and dense and are borne in very colorful tufts. The feathery celosia begins to bloom from late spring to fall, and the shades of its flowers can be yellow, orange, pink, red ... It is an outdoor plant in full sun, so it will bloom abundantly. It is advisable to clean it of faded flowers. Once it blooms, it can be placed indoors in a well-lit place. The feathery celosia needs constant watering, always keeping the soil moist. It does not tolerate drafts and intense cold. It does not tolerate frost. ",
       image: [
         {
           imageOne:
