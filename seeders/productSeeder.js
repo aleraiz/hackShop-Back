@@ -10,23 +10,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610138/ecommerce/v8fud5cxreod3topstov.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(3).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610380/ecommerce/oth803tzvvplw6iyalky.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/platycerum-cuerno-alce_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610447/ecommerce/e21x3dmafzyaj7wzl22r.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610138/ecommerce/v8fud5cxreod3topstov.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610380/ecommerce/oth803tzvvplw6iyalky.png",
         },
       ],
       price: 4.6,
@@ -35,29 +35,29 @@ module.exports = async function () {
       categoryId: 1,
     },
     {
-      productName: "Blechnum silver lady (helecho) M-15",
+      productName: "Blechnum silver lady M-15",
       description:
         "Blechnum silver lady, known as lady plant, is a very elegant fern for its large light green leaves and beautiful symmetry.It is a fast growing fern, planted in pot or planter to decorate the interior of the house, or directly in the garden.It is a houseplant in humid, illuminated and ventilated place. It can also be placed outdoors in semi-shade or shade, where it does not receive direct sun and has sufficient moisture.The Blechnum lady plant, is a plant that requires enough moisture and well-drained soil, so it is recommended to spray it and water it at the base with a container with water that we will remove once it has absorbed the necessary.Dry environments produced by heating, harmful to the fern, should be avoided.It does not tolerate cold temperatures, wind and frost.",
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/blechnum_silver_lady.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611481/ecommerce/u12erdjgb4qebmbe1cvc.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/helecho_silver_lady.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612275/ecommerce/kmgvpaz9zqmxxp6h8ur1.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/planta_se%C3%B1ora.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612290/ecommerce/t5btgns50spjfl6bsrod.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611411/ecommerce/w9f3gvktkzv7mpn1ezt7.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611453/ecommerce/azsgvwlsfrzbx74sohir.png",
         },
       ],
       price: 6.65,
@@ -72,23 +72,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612127/ecommerce/mnpuqlrbsecdpzfxuebm.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612153/ecommerce/qsl1gfcfqxpcvxqsgtej.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612200/ecommerce/buhizexdlonb0u4dcqbn.png",
         },
         {
           imageDetailOne:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663602790/ecommerce/m8mtlur17cazqiyjzbaq.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612063/ecommerce/wjs7awh67ge7rmebefns.png",
         },
         {
           imageDetailTwo:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663602837/ecommerce/vgv6ytzqpl2y241mivs4.png",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612101/ecommerce/k5w995zmfzaxipv9olmy.png",
         },
       ],
       price: 5.95,
@@ -103,22 +103,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612540/ecommerce/zlvtjkhbi9kbzh2sloda.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612552/ecommerce/lwcbq2pwcimh14joo6lu.png",
         },
         {
-          imageThree: "",
+          imageThree:
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612570/ecommerce/ezfkjff6fd0v2pbnvlsy.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612501/ecommerce/hv697ou3ori7vm7hbnug.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663612520/ecommerce/y06ps1tks0uo4gnhp3gp.png",
         },
       ],
       price: 6.6,
@@ -127,28 +128,29 @@ module.exports = async function () {
       categoryId: 1,
     },
     {
-      productName: "Phlebodium aureum (helecho) M-15",
+      productName: "Phlebodium aureum M-15",
       description:
         "Phlebodium aureum blue star, known as palm fern, is a variety of fern very elegant for its large blue-green leaves with wavy margins.The showiness of its leaves makes this fern an ideal plant to decorate the interior of the house.It is a houseplant in humid and illuminated place.It can also be placed outdoors in shade or semi-shade, where it does not receive direct sun and has sufficient moisture.The phlebodium is a plant that needs plenty of moisture, so it is recommended to spray and water it. It can also be placed outdoors in shade or semi-shade, where it does not receive direct sun and has sufficient moisture.The phlebodium is a plant that needs enough moisture, so it is recommended to spray it and water it at the base with a container with water that we will remove once it has absorbed the necessary.Dry environments produced by heating should be avoided, harmful to the fern.It does not tolerate cold temperatures, wind and frost, as well as sudden changes in temperature.",
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613121/ecommerce/mwils6dk6hoinjjapeib.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613135/ecommerce/whcwjabiymml3sax8mpf.png",
         },
         {
-          imageThree: "",
+          imageThree:
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613150/ecommerce/hnesc821z39z0trx3gux.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613090/ecommerce/zpiejpk0x4fojawtmpm5.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613103/ecommerce/fyxsboylkuffgxfrqol9.png",
         },
       ],
       price: 6.6,
@@ -163,23 +165,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613475/ecommerce/pq5rw3wlgd95svbdtd4w.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(3).JP",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613492/ecommerce/sw1ghvvnwwfb5akx3brb.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(5).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613504/ecommerce/slze1agya3geu1texm8i.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613445/ecommerce/zbxnxgvmfeq8ufkxo3rz.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613461/ecommerce/sywnfisi3g43bs4odcvl.png",
         },
       ],
 
@@ -195,23 +197,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_grandiflora_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613836/ecommerce/bcdau9nhthe6sshdq3tl.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_2_colores.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613846/ecommerce/lcq2344tnxjvssq2peee.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_bicolor.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613939/ecommerce/itl1tbskhbh23i80ufxy.jpg",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613804/ecommerce/najiccygqygusstincgj.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663613822/ecommerce/r0wm2pzbjau7kf0mdspf.png",
         },
       ],
       price: 3.65,
