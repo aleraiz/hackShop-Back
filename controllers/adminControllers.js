@@ -1,8 +1,33 @@
-const { Product } = require("../models");
+const { Product, Administrator } = require("../models");
 const slugify = require("slugify");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const adminController = {
+  login: async (req, res) => {
+    console.log(req.body);
+    const admin = await Administrator.findOne({
+      where: { email: req.body.email },
+    });
+    console.log(admin);
+    if (!admin) {
+      return res.status(409).json({ error: "Invalid credentials" });
+    }
+    const verifyPassword = await bcrypt.compare(
+      req.body.password,
+      admin.password
+    );
+    if (!verifyPassword) {
+      return res.status(401).json({ error: "Invalid credentials" });
+    }
+    const token = jwt.sign(
+      { email: req.body.email, password: req.body.password },
+      process.env.JWT_TOKEN_KEY
+    );
+    console.log(token);
+    return res.json({ token });
+  },
+
   indexAdmin: async (req, res) => {
     const products = await Product.findAll({ order: [["createdAt", "DESC"]] });
     res.json(products);
