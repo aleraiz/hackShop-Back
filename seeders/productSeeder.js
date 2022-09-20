@@ -253,32 +253,33 @@ module.exports = async function () {
       categoryId: 2,
     },
     {
-      productName: "Amaranthus hybridus",
+      productName: "Kalanchoe M-11",
       description:
-        "It is an annual herb, with erect stems, glabrous below, becoming subglabrous or sparsely pubescent upwards with trichomes up to 1 mm long, very thin and irregularly folded; monoecious.",
+        "Kalanchoe blossfediana, known as Kalanchoe, Calanchoe or Scarlet, is a small ornamental plant, very easy to grow and very popular for its abundant flowering that lasts almost all year round and the colorful flowers. Its leaves are thick and fleshy and its flowers are arranged in clusters or simple bouquets of pink, orange, white. It is an outdoor plant in semi-shade, since the direct sun of half a day can damage it, it can also be located indoors in areas with enough light. Watering should be moderate, allowing the substrate to dry between watering, excess water is harmful. It does not support the cold, it develops better with warm temperatures.",
+
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663681765/ecommerce/nawciwvyidq6uhbfi2xb.png",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663681790/ecommerce/wfaem72eiqac8nhugamu.png",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663681803/ecommerce/leib96s8hqm5srzkeopn.png",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663681734/ecommerce/bxbkdyv0cjegglgv3vdh.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663681748/ecommerce/y3xa4kg21jgppx6ooafz.png",
         },
       ],
-      price: 8.95,
+      price: 3.05,
       featured: false,
       stock: 15,
       categoryId: 2,
@@ -414,11 +415,11 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663610984/ecommerce/j7dzjggfj9ehba3syifv.webp",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663685662/ecommerce/nyocwgrwbelitf9nupnu.png",
         },
         {
           imageTwo:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663611044/ecommerce/eaushwh6qnblcjcz3zuy.webp",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663685672/ecommerce/xnaltmlwbexleflig8cu.png",
         },
         {
           imageThree:
@@ -426,11 +427,11 @@ module.exports = async function () {
         },
         {
           imageDetailOne:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663610957/ecommerce/srasuasqekwsrqnzp1qq.png",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610937/ecommerce/axybafxvikuw4alxwiw8.png",
         },
         {
           imageDetailTwo:
-            "https://res.cloudinary.com/mdeluca/image/upload/v1663610937/ecommerce/axybafxvikuw4alxwiw8.png",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610957/ecommerce/srasuasqekwsrqnzp1qq.png",
         },
       ],
       price: 6.6,
