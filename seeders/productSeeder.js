@@ -228,23 +228,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/celosia_plumosa_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663607619/ecommerce/n7plsaxmj0plldjav4ks.jpg",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/celosia_plumosa_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663607654/ecommerce/xwt4wohvsin4v8afdd6z.webp",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/celosia_plumosa_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663607876/ecommerce/dnuaeyycizm4rksks4hr.jpg",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663607423/ecommerce/zmkjt8vbze6r5qchijq7.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663607451/ecommerce/mhtwb5qu3ot8yseyuhqr.png",
         },
       ],
       price: 8.7,
@@ -290,23 +290,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608325/ecommerce/x7ik93u1q4jvgrufcfay.jpg",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608354/ecommerce/f4kk3yz3noeze2o8qrxt.jpg",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608476/ecommerce/qzoag6lglsz4i0khpyuf.jpg",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608205/ecommerce/rkswxlvpzghz5jgmhox4.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608170/ecommerce/xwbkun9zn6yuizcsngdv.png",
         },
       ],
       price: 5.95,
@@ -321,23 +321,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608737/ecommerce/vetczj0pym6urpgmwxnf.jpg",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608758/ecommerce/cpz4xepvl9lzn78zivba.jpg",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608778/ecommerce/cntkyevldrbwuhnhyxqa.jpg",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608688/ecommerce/tnr0mzkrcnfm35tm4ysf.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663608663/ecommerce/tbgqu2vnaspoqf3ws9rq.png",
         },
       ],
       price: 5.95,
@@ -352,11 +352,11 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663609414/ecommerce/ujhb22oicfgw6k5ada1y.jpg",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/coleo_gigante_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663609856/ecommerce/sh7ho7d1c6gmn2fhfrno.webp",
         },
         {
           imageThree:
@@ -364,11 +364,11 @@ module.exports = async function () {
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663609381/ecommerce/qebq2t31exnwlrxu4z0b.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663609358/ecommerce/z1296g9omzxa2wzyugfw.png",
         },
       ],
       price: 5.95,
@@ -383,22 +383,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610435/ecommerce/tgdtn00ddmtvzkt4jxdf.webp",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610193/ecommerce/gvajbxtg4kwbu7johimc.jpg",
         },
         {
-          imageThree: "",
+          imageThree:
+            " https://res.cloudinary.com/mdeluca/image/upload/v1663610435/ecommerce/tgdtn00ddmtvzkt4jxdf.webp",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610071/ecommerce/u20waxoqlvrlwi5iz4s7.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610110/ecommerce/xrradidewqntjdndu2me.png",
         },
       ],
       price: 6.6,
@@ -413,22 +414,23 @@ module.exports = async function () {
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(2).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610984/ecommerce/j7dzjggfj9ehba3syifv.webp",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/phlebodium_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611044/ecommerce/eaushwh6qnblcjcz3zuy.webp",
         },
         {
-          imageThree: "",
+          imageThree:
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611066/ecommerce/wzpi2iycfyeokqethqjm.webp",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610957/ecommerce/srasuasqekwsrqnzp1qq.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663610937/ecommerce/axybafxvikuw4alxwiw8.png",
         },
       ],
       price: 6.6,
@@ -436,62 +438,31 @@ module.exports = async function () {
       stock: 15,
       categoryId: 2,
     },
-    {
-      productName: "Celosia plumosa M-15 para jardinería",
-      description:
-        "Celosia argentea plumosa, this variety is taller than the usual variety which is more compact. It is perfect for gardens but it can also be grown in pots, its leaves and reddish flowers stand out. This plant has an erect stem with long, lance-shaped, light green leaves. Its feathery flowers are small and dense and are borne in very colorful tufts. The feathery celosia begins to bloom from late spring to fall, and the shades of its flowers can be yellow, orange, pink, red ... It is an outdoor plant in full sun, so it will bloom abundantly. It is advisable to clean it of faded flowers. Once it blooms, it can be placed indoors in a well-lit place. The feathery celosia needs constant watering, always keeping the soil moist. It does not tolerate drafts and intense cold. It does not tolerate frost. ",
-      image: [
-        {
-          imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(2).JPG",
-        },
-        {
-          imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(3).JP",
-        },
-        {
-          imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/gerbera_jamesoni_(5).JPG",
-        },
-        {
-          imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
-        },
-        {
-          imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
-        },
-      ],
 
-      price: 5.99,
-      featured: false,
-      stock: 15,
-      categoryId: 2,
-    },
     {
-      productName: "Petunia grandiflora M-15",
+      productName: "Euphorbia milii M-13",
       description:
-        "  *Mezcladas dos plantas de distintos colores en la misma maceta.Petunia grandiflora, es una de las plantas más conocidas y populares tanto por su abundante floración de una amplia gama de colores, por su fácil cultivo. Es una planta de temporada, cuyas hojas son ovaladas de color verde claro y sus flores que van desde el rojo, rosa, azul, púrpura, bicolor…., que aparecen a principios de primavera y se mantienen hasta el final del otoño. La Petunia es una planta ornamental, utilizada en maceta para decorar balcones y ventanas y formando borduras en jardines. Es una planta de exterior, preferiblemente a pleno sol o en semisombra, y en invierno es aconsejable resguardarla, ya que soporta el frío pero no las heladas. Su riego debe ser abundante, sin mojar las flores y evitando el riego en las horas centrales",
+        " Euphorbia mili, commonly known as Crown of Thorns or Thorn of Christ, is a shrub with branched and thorny stems (hence its common name), whose leaves are oval and light green. The Crown of Thorns produces small yellow, red, white, etc... flowers, grouped in clusters practically all year round. The Thorn of Christ is an ornamental plant whose attraction are the showy bracts that surround its flowers and that are of intense colors, ranging from red, pink, yellow, white and orange. It is an ideal outdoor plant to place in gardens or balconies in full sun or semi-shade. It is also widely used as an indoor plant in places where it receives plenty of light and some direct sun. Euphorbia should be watered moderately and sparingly in winter, avoiding waterlogging of the substrate due to root rot. It is very resistant to drought. It does not support cold temperatures, the Euphorbia that is outdoors, will have to be sheltered from cold and frost. Euphorbia has a milky liquid (Latex), irritating and caustic, so avoid contact with skin and eyes and ingestion.",
       image: [
         {
           imageOne:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_grandiflora_(1).JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611780/ecommerce/rrutgdqevsvesypdcvva.jpg",
         },
         {
           imageTwo:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_2_colores.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611780/ecommerce/rrutgdqevsvesypdcvva.jpg",
         },
         {
           imageThree:
-            "https://www.tusplantasonline.com/img/galeria/570/petunia_bicolor.JPG",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611780/ecommerce/rrutgdqevsvesypdcvva.jpg",
         },
         {
           imageDetailOne:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611718/ecommerce/puvqvddu5wj627wikbpp.png",
         },
         {
           imageDetailTwo:
-            "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+            "https://res.cloudinary.com/mdeluca/image/upload/v1663611739/ecommerce/jlvkp5mqsa7lw0te5a1t.png",
         },
       ],
       price: 3.65,

@@ -24,7 +24,6 @@ async function createlogin(req, res) {
   const client = await Client.findOne({
     where: { email: req.body.email },
   });
-  console.log(client);
   if (!client) {
     return res.status(409).json({ error: "Email already not exists" });
   }

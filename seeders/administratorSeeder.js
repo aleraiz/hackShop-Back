@@ -9,9 +9,9 @@ module.exports = async function () {
       password: "123",
     },
     {
-      firstname: "Pablo",
-      lastname: "Perez",
-      email: "pabloperez@gmail.com",
+      firstname: "Admin",
+      lastname: "Admin",
+      email: "admin@admin.com",
       password: "123",
     },
 
