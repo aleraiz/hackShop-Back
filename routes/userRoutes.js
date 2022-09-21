@@ -9,7 +9,11 @@ userRoutes.use(
 
 userRoutes.get("/myaccount", userControllers.myAccount);
 
+userRoutes.patch("/myaccount", userControllers.udpateUser);
+
 userRoutes.post("/logout", userControllers.logoutUser);
+
+userRoutes.get("/order", userControllers.orderFinded);
 
 userRoutes.post("/order", userControllers.orderSend);
 

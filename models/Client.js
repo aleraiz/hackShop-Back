@@ -1,8 +1,14 @@
 const bcrypt = require("bcryptjs");
 
 module.exports = (sequelize, Model, DataTypes) => {
-  class Client extends Model {}
-
+  class Client extends Model {
+    async comparePassword(password, passwordFront) {
+      const verifyPassword = await bcrypt.compare(passwordFront, password);
+      // if (!verifyPassword) {
+      //   return res.status(401).json({ error: "Invalid credentials" });
+      // }
+    }
+  }
   Client.init(
     {
       id: {
