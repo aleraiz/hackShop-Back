@@ -8,11 +8,7 @@ async function myAccount(req, res) {
 async function udpateUser(req, res) {
   const client = await Client.findByPk(req.auth.userId);
 
-  function verifyPassword() {
-    if (client) {
-      client.comparePassword(client.password, req.body.password);
-    }
-  }
+  const verifyPassword = client.comparePassword(req.body.password);
 
   try {
     if (verifyPassword) {
