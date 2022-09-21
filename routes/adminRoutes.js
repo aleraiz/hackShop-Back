@@ -3,7 +3,7 @@ const adminRoutes = express.Router();
 const adminController = require("../controllers/adminControllers");
 const { expressjwt: checkJwt } = require("express-jwt");
 
-adminRoutes.post("/login", adminController.login);
+adminRoutes.post("/login", adminController.login); //modificar, debe ser token
 
 adminRoutes.use(
   checkJwt({ secret: process.env.JWT_TOKEN_KEY, algorithms: ["HS256"] })
