@@ -1,5 +1,5 @@
 const { Client, Order } = require("../models");
-
+const bcrypt = require("bcryptjs");
 async function myAccount(req, res) {
   const client = Client.findByPk(req.auth.id);
   res.json(client);
@@ -9,6 +9,7 @@ async function udpateUser(req, res) {
   const client = await Client.findByPk(req.auth.userId);
 
   const verifyPassword = client.comparePassword(req.body.password);
+  // bcrypt.hash(req.body.newPassword, 10);
 
   try {
     if (verifyPassword) {
@@ -16,9 +17,10 @@ async function udpateUser(req, res) {
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         email: req.body.email,
-        password: req.body.newPassword,
+        password: req.body.password,
         address: req.body.address,
       });
+      console.log(password);
       return res.status(200).json({ client });
     }
   } catch (error) {
