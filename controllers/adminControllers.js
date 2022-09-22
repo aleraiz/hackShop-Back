@@ -20,10 +20,8 @@ const adminController = {
     if (!admin) {
       return res.status(409).json({ error: "Invalid credentials" });
     }
-    const verifyPassword = await bcrypt.compare(
-      req.body.password,
-      admin.password
-    );
+    const verifyPassword = client.comparePassword(req.body.password);
+
     if (!verifyPassword) {
       return res.status(401).json({ error: "Invalid credentials" });
     }
