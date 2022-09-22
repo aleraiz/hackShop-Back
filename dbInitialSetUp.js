@@ -1,4 +1,4 @@
-const db = require("./models/Index");
+const db = require("./models");
 
 const administratorSeeder = require("./seeders/administratorSeeder");
 const productSeeder = require("./seeders/productSeeder");
