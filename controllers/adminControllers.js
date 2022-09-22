@@ -20,10 +20,8 @@ const adminController = {
     if (!admin) {
       return res.status(409).json({ error: "Invalid credentials" });
     }
-    const verifyPassword = await bcrypt.compare(
-      req.body.password,
-      admin.password
-    );
+    const verifyPassword = admin.comparePassword(req.body.password);
+
     if (!verifyPassword) {
       return res.status(401).json({ error: "Invalid credentials" });
     }
@@ -63,48 +61,37 @@ const adminController = {
     });
 
     form.parse(req, async (err, fields, files) => {
-      const ext = path.extname(files["image.0"].filepath);
-      const newFileName = `image_${Date.now()}${ext}`;
+      const tempImg = [];
+      for (const fileKey in files) {
+        const file = files[fileKey];
+        const ext = path.extname(file.filepath);
+        const newFileName = `image_${Date.now()}${ext}`;
 
-      const { data, error } = await supabase.storage
-        .from("images")
-        .upload(newFileName, fs.createReadStream(files["image.0"].filepath), {
-          cacheControl: "3600",
-          upsert: false,
-          contentType: files["image.0"].mimetype,
-        });
+        const { data, error } = await supabase.storage
+          .from("images")
+          .upload(newFileName, fs.createReadStream(file.filepath), {
+            cacheControl: "3600",
+            upsert: false,
+            contentType: file.mimetype,
+          });
 
-      const productName = fields.productName;
-
-      const images = [];
-      const imagesKeys = [
-        "imageOne",
-        "imageTwo",
-        "imageThree",
-        "imageDetailOne",
-        "imageDetailTwo",
-      ];
-
-      for (let i = 0; i < 5; i++) {
-        const tempImg = {};
-        if (files[`image.${i}`]) {
-          tempImg[imagesKeys[i]] = `${process.env.SUPABASE_BUCKET_URL}${
-            files[`image.${i}`].newFilename
-          }`;
-        } else {
-          tempImg[imagesKeys[i]] = "";
+        if (error) {
+          return res
+            .status(500)
+            .json({ error: "An error has occur white supabase image upload" });
         }
-        images.push(tempImg);
+
+        tempImg.push(`${process.env.SUPABASE_BUCKET_URL}${newFileName}`);
       }
 
       await Product.create({
-        productName: productName,
+        productName: fields.productName,
         description: fields.description,
-        image: images,
+        image: tempImg,
         price: fields.price,
         stock: fields.stock,
         featured: fields.featured,
-        slug: productName,
+        slug: fields.productName,
       });
       res.json("Me cree");
     });

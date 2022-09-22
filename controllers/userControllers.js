@@ -7,32 +7,29 @@ async function myAccount(req, res) {
 
 async function udpateUser(req, res) {
   const client = await Client.findByPk(req.auth.userId);
-
   const verifyPassword = client.comparePassword(req.body.password);
   // bcrypt.hash(req.body.newPassword, 10);
 
   try {
     if (verifyPassword) {
-      Client.update({
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        email: req.body.email,
-        password: req.body.password,
-        address: req.body.address,
-      });
-      console.log(password);
+      Client.update(
+        {
+          firstname: req.body.firstname,
+          lastname: req.body.lastname,
+          email: req.body.email,
+          password: req.body.newPassword,
+          address: req.body.address,
+          phoneNumber: req.body.phoneNumber,
+        },
+        {
+          where: { id: req.auth.userId },
+        }
+      );
       return res.status(200).json({ client });
     }
   } catch (error) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
-}
-
-async function logoutUser(req, res) {
-  if (!req.auth) {
-    return res.status(401).json({ error: "Usuario no encontrado" });
-  }
-  res.sendStatus(200);
 }
 
 async function orderFinded(req, res) {
@@ -46,10 +43,11 @@ async function orderFinded(req, res) {
 }
 
 async function orderSend(req, res) {
+  const client = await Client.findByPk(req.auth.userId);
   await Order.create({
     productList: req.body.productList,
     paymentMethod: "visa Crédito",
-    address: req.body.address,
+    address: client.address,
     clientId: req.auth.userId,
   });
   return res.status(200).json();
@@ -58,7 +56,6 @@ async function orderSend(req, res) {
 module.exports = {
   myAccount,
   udpateUser,
-  logoutUser,
   orderFinded,
   orderSend,
 };

@@ -1,7 +1,12 @@
 const bcrypt = require("bcryptjs");
 
 module.exports = (sequelize, Model, DataTypes) => {
-  class Administrator extends Model {}
+  class Administrator extends Model {
+    async comparePassword(passwordFront) {
+      const verifyPassword = await bcrypt.compare(passwordFront, this.password);
+      return verifyPassword;
+    }
+  }
 
   Administrator.init(
     {
