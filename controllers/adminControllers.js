@@ -20,7 +20,7 @@ const adminController = {
     if (!admin) {
       return res.status(409).json({ error: "Invalid credentials" });
     }
-    const verifyPassword = client.comparePassword(req.body.password);
+    const verifyPassword = admin.comparePassword(req.body.password);
 
     if (!verifyPassword) {
       return res.status(401).json({ error: "Invalid credentials" });
