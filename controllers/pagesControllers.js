@@ -1,5 +1,5 @@
-const { Client, Product } = require("../models/index");
 const jwt = require("jsonwebtoken");
+const { Client, Product } = require("../models/index");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll({ order: [["createdAt", "DESC"]] });
