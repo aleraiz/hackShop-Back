@@ -31,13 +31,6 @@ async function udpateUser(req, res) {
   }
 }
 
-async function logoutUser(req, res) {
-  if (!req.auth) {
-    return res.status(401).json({ error: "Usuario no encontrado" });
-  }
-  res.sendStatus(200);
-}
-
 async function orderFinded(req, res) {
   const orders = await Order.findAll({ where: { clientId: req.auth.userId } });
 
@@ -49,10 +42,11 @@ async function orderFinded(req, res) {
 }
 
 async function orderSend(req, res) {
+  const client = await Client.findByPk(req.auth.userId);
   await Order.create({
     productList: req.body.productList,
     paymentMethod: "visa Crédito",
-    address: req.body.address,
+    address: client.address,
     clientId: req.auth.userId,
   });
   return res.status(200).json();
@@ -61,7 +55,6 @@ async function orderSend(req, res) {
 module.exports = {
   myAccount,
   udpateUser,
-  logoutUser,
   orderFinded,
   orderSend,
 };
