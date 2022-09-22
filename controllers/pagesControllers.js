@@ -1,5 +1,4 @@
-const bcrypt = require("bcryptjs");
-const { Client, Product } = require("../models");
+const { Client, Product } = require("../models/index");
 const jwt = require("jsonwebtoken");
 
 async function indexProducts(req, res) {
