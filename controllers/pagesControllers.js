@@ -22,6 +22,7 @@ async function reset(req, res) {
   await dbInitialSetUp();
   res.json({ message: "Exit" });
 }
+
 async function createlogin(req, res) {
   const client = await Client.findOne({
     where: { email: req.body.email },
