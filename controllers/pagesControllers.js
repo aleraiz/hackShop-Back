@@ -19,7 +19,7 @@ async function indexCategory(req, res) {
   res.json(product);
 }
 async function reset(req, res) {
-  dbInitialSetUp();
+  await dbInitialSetUp();
   res.json({ message: "Exit" });
 }
 async function createlogin(req, res) {
