@@ -4,6 +4,8 @@ const publicRoutes = express.Router();
 
 publicRoutes.post("/token", pagesControllers.createlogin);
 
+publicRoutes.get("/reset", pagesControllers.reset);
+
 publicRoutes.post("/register", pagesControllers.storeRegister);
 
 publicRoutes.get("/products", pagesControllers.indexProducts);

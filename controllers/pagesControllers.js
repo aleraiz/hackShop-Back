@@ -1,5 +1,6 @@
 const { Client, Product } = require("../models");
 const jwt = require("jsonwebtoken");
+const dbInitialSetUp = require("../dbInitialSetUp");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll({ order: [["createdAt", "DESC"]] });
@@ -17,7 +18,10 @@ async function indexCategory(req, res) {
   });
   res.json(product);
 }
-
+async function reset(req, res) {
+  dbInitialSetUp();
+  res.json({ message: "Exit" });
+}
 async function createlogin(req, res) {
   const client = await Client.findOne({
     where: { email: req.body.email },
@@ -80,5 +84,6 @@ module.exports = {
   indexProductId,
   indexCategory,
   createlogin,
+  reset,
   storeRegister,
 };
