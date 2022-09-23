@@ -1,11 +1,9 @@
 const { Product, Administrator } = require("../models");
-const slugify = require("slugify");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const formidable = require("formidable");
-const fs = require("fs");
-const path = require("path");
 const { createClient } = require("@supabase/supabase-js");
+const formidable = require("formidable");
+const jwt = require("jsonwebtoken");
+const path = require("path");
+const fs = require("fs");
 
 const supabase = createClient(
   process.env.SUPABASE_URL,

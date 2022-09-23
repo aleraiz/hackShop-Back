@@ -1,14 +1,12 @@
 const { Client, Order } = require("../models");
-const bcrypt = require("bcryptjs");
+
 async function myAccount(req, res) {
   const client = Client.findByPk(req.auth.id);
   res.json(client);
 }
-
 async function udpateUser(req, res) {
   const client = await Client.findByPk(req.auth.userId);
   const verifyPassword = client.comparePassword(req.body.password);
-  // bcrypt.hash(req.body.newPassword, 10);
 
   try {
     if (verifyPassword) {
@@ -31,7 +29,6 @@ async function udpateUser(req, res) {
     return res.status(401).json({ error: "Invalid credentials" });
   }
 }
-
 async function orderFinded(req, res) {
   const orders = await Order.findAll({ where: { clientId: req.auth.userId } });
 

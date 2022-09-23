@@ -7,7 +7,6 @@ module.exports = (sequelize, Model, DataTypes) => {
       return verifyPassword;
     }
   }
-
   Administrator.init(
     {
       id: {

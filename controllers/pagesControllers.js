@@ -1,6 +1,6 @@
+const dbInitialSetUp = require("../dbInitialSetUp");
 const { Client, Product } = require("../models");
 const jwt = require("jsonwebtoken");
-const dbInitialSetUp = require("../dbInitialSetUp");
 
 async function indexProducts(req, res) {
   const products = await Product.findAll({ order: [["createdAt", "DESC"]] });
