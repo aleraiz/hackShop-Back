@@ -10,7 +10,7 @@ Este proyecto contiene el desarrollo de la API utilizada en el sitio [Hackshop](
 
 ## Descripción: 
 Este proyecto, forma parte del proyecto <b>FINAL</b> propuesto por [Hack Academy](https://ha.dev/) en el marco del Bootcamp de programacion <b>full stack</b>.
-Para el desarrollo de esta API se utilizaron las siguientes tecnologias :
+<p>Para el desarrollo de esta API se utilizaron las siguientes tecnologias :</p>
 
 * Node Js/Express 
 * MySql 
