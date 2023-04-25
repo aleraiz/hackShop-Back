@@ -22,4 +22,4 @@ Este proyecto, forma parte del proyecto <b>FINAL</b> propuesto por [Hack Academy
 
 Puede resetear la base de datos, al ingresar [aqui](https://hackshop-plants.vercel.app/)
 
- <p>Cualquier error puede notificarlo a <b> alejandroraiz7@gmail.com</b> </p>.
+ <p>Cualquier error puede notificarlo a <b> alejandroraiz7@gmail.com</b> </p>

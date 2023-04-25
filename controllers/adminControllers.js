@@ -76,7 +76,9 @@ const adminController = {
         if (error) {
           return res
             .status(500)
-            .json({ error: "An error has occur white supabase image upload" });
+            .json({
+              error: "An error occurred while uploading the image to supabase",
+            });
         }
 
         tempImg.push(`${process.env.SUPABASE_BUCKET_URL}${newFileName}`);
